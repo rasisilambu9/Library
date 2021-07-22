@@ -5,7 +5,7 @@
 body{
 background-image:url("home-imgs.jpeg");
 background-repeat:no-repeat;
-background-size:1500px 800px;}
+background-size:1800px 800px;}
 /* Add a black background color to the top navigation */
 .topnav {
   background-color: #333;
@@ -49,7 +49,7 @@ background-size:1500px 800px;}
    
    padding:8px;
   margin-top: 6px;
-  margin-left:760px;
+  margin-left:960px;
   border: none;
   border-radius:10px;
 }
@@ -113,7 +113,7 @@ border-color:green;}</style></head>
  <?php
  
 $servername = "localhost";
-$username = "localhost";
+$username = "root";
 $password ="";
 $dbname="test";
 $query1= "SELECT * from `test`.`Book_det` where status=0";

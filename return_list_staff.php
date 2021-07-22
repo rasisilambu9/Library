@@ -5,7 +5,7 @@
 body{
 background-image:url("home-imgs.jpg");
 background-repeat:no-repeat;
-background-size:1500px 800px;}
+background-size:1800px 800px;}
 .topnav {
   background-color: #333;
   overflow: hidden;
@@ -48,7 +48,7 @@ background-size:1500px 800px;}
    
    padding:10px;
   margin-top: 8px;
-  margin-left:930px;
+  margin-left:1100px;
   border: none;
 border-radius:20px;
 }
@@ -131,7 +131,7 @@ margin-left:400px;}
  echo"<input type=varchar name=rollno value=$rollno></input>";echo"<br>";
  echo"<font color=grey><b>&emsp;&emsp;&emsp;&emsp;Book ID</b></font><br>";
 $servername = "localhost";
-$username = "localhost";
+$username = "root";
 $password ="";
 $dbname="test";
  $query1= "select status,Book_id from lend_det where RollNo='".$rollno."'";

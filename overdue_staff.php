@@ -8,7 +8,7 @@
 <?php
 
 $servername = "localhost";
-$username = "localhost";
+$username = "root";
 $password ="";
 $dbname="test";
 $query1= "SELECT Date,Book_id,RollNo,Book from `test`.`lend_det`";

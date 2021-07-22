@@ -5,7 +5,7 @@
 body{
 background-image:url("home-imgs.jpeg");
 background-repeat:no-repeat;
-background-size:1500px 800px;
+background-size:1800px 800px;
 } 
 
 /* Add a black background color to the top navigation */
@@ -58,7 +58,7 @@ background-size:1500px 800px;
    
    padding:6px;
   margin-top: 8px;
-  margin-left:790px;
+  margin-left:960px;
   border: none;
   border-radius:10px;
 }
@@ -109,13 +109,14 @@ font-size:1.5em;
 <font color=black></b>Name<b></font><br>
 <input type=text name="name" placeholder=Name></input><br>
 <font color=black></b>Year<b></font><br>
+
  <?php
  echo"<select name=year>";
  echo"<option value=0>Select Academic Year</option>";
  for($start=2000;$start<=2050;$start+=1){
 	 $starts=$start+4;
-	 $a=start;
-	 $a.=starts;
+	 $a=$start;
+	 $a.=$starts;
  echo"<option value=$start-$starts >$start - $starts	</option>";}
  echo"</select>";
  

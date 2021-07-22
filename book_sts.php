@@ -26,7 +26,7 @@ button {
 body{
 background-image:url("home-imgs.jpeg");
 background-repeat:no-repeat;
-background-size:1500px 800px;
+background-size:1800px 800px;
 } 
 .img1 img {
    width: 180px;
@@ -78,7 +78,7 @@ background-size:1500px 800px;
    
    padding:6px;
   margin-top: 8px;
-  margin-left:800px;
+  margin-left:980px;
   border: none;
   border-radius:10px;
 }

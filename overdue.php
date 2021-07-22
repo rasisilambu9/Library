@@ -5,7 +5,7 @@
 body{
 background-image:url("home-imgs.jpeg");
 background-repeat:no-repeat;
-background-size:1500px 800px;
+background-size:1800px 800px;
 } 
 </style>
  
@@ -22,7 +22,7 @@ background-size:1500px 800px;
 
 
 $servername = "localhost";
-$username = "localhost";
+$username = "root";
 $password ="";
 $dbname="test";
 $query1= "SELECT Date,Book_id,RollNo,Book from `test`.`lend_det`";

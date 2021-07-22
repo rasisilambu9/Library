@@ -33,7 +33,7 @@ Staff Details</TITLE>
 $stu_id=$_POST["name"];
 $passworda=$_POST["password"];
 $servername = "localhost";
-$username = "localhost";
+$username = "root";
 $password ="";
 $dbname="test";
 
@@ -66,14 +66,14 @@ if( $passworda==($row['dob'])	)
 {	
 $result=mysqli_query($conn,$query1);
 while($row=mysqli_fetch_array($result)){
-echo"<b>ROLLNO:".$row["staff_id"]."	</b>";
+echo"<b><font color=red>ROLLNO</font>:".$row["staff_id"]."	</b>";
 echo"</br>";echo"</br>";
-echo"<b>NAME:".$row["Name"]."</b>";
+echo"<b><font color=red>NAME</font>:".$row["Name"]."</b>";
 	echo"<br>";echo"</br>";
-echo"<b>NO OF BOOK AVAILABLE:".$row["No_of_book_avl"]."</td>";echo"</br>";echo"</br>";
-echo"<b>DOB:".$row["dob"]."</td>";echo"</br>";echo"</br>";
-echo"<b>Mail ID:".$row["mail"]."</td>";echo"</br>";echo"</br>";
-echo"<b>Phone NO:".$row["phno"]."</td>";echo"</br>";echo"</br>";
+echo"<b><font color=red>NO OF BOOK AVAILABLE</font>:".$row["No_of_book_avl"]."</td>";echo"</br>";echo"</br>";
+echo"<b><font color=red>DOB</font>:".$row["dob"]."</td>";echo"</br>";echo"</br>";
+echo"<b><font color=red>Mail ID</font>:".$row["mail"]."</td>";echo"</br>";echo"</br>";
+echo"<b><font color=red>Phone NO</font>:".$row["phno"]."</td>";echo"</br>";echo"</br>";
 echo"<br>";echo"</br>";
 echo"<br>";
 }

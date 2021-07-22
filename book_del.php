@@ -4,7 +4,7 @@
  body{
 background-image:url("home-imgs.jpeg");
 background-repeat:no-repeat;
-background-size:1500px 800px;
+background-size:1800px 800px;
 } 
  
 .almnt{
@@ -53,7 +53,7 @@ border-radius:10px;}
    
    padding:8px;
   margin-top: 8px;
-  margin-left:800px;
+  margin-left:980px;
   border: none;
 }
  
@@ -92,7 +92,7 @@ $bookid=$_POST["bookid"];
  
    
 $servername = "localhost";
-$username = "localhost";
+$username = "root";
 $password ="";
 $dbname="test";
 $conn = new mysqli($servername, $username, $password ,$dbname);

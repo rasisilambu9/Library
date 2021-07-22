@@ -9,7 +9,7 @@ $start=$_POST["start_date"];
 $end=$_POST["end_date"];
  
 $servername = "localhost";
-$username = "localhost";
+$username = "root";
 $password ="";
 $dbname="test";
 // Create connection

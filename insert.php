@@ -50,8 +50,9 @@ border-radius:10px;}
    
    padding:8px;
   margin-top: 8px;
-  margin-left:800px;
+  margin-left:960px;
   border: none;
+  border-radius:10px;
 }
  
 button {
@@ -104,7 +105,7 @@ $avl;
  
 $i=1;    
 $servername = "localhost";
-$username = "localhost";
+$username = "root";
 $password ="";
 $dbname="test";
 // Create connection

@@ -6,7 +6,7 @@
 body{
 background-image:url("home-imgs.jpeg");
 background-repeat:no-repeat;
-background-size:1500px 800px;}
+background-size:1800px 800px;}
 /* Add a black background color to the top navigation */
 .topnav {
   background-color: #333;
@@ -50,7 +50,7 @@ background-size:1500px 800px;}
    
    padding:8px;
   margin-top: 8px;
-  margin-left:780px;
+  margin-left:980px;
   border: none;
 }
  

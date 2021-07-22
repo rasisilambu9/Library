@@ -5,7 +5,7 @@
 body{
 background-image:url("home-imgs.jpeg");
 background-repeat:no-repeat;
-background-size:1500px 800px;
+background-size:1800px 800px;
 } 
  
 .almnt{
@@ -54,7 +54,7 @@ border-radius:10px;}
    
    padding:8px;
   margin-top: 8px;
-  margin-left:940px;
+  margin-left:1100px;
   border: none;
 }
  
@@ -102,7 +102,7 @@ $bookid=$_POST["bookid"];
 $avl;
 $i=1;    
 $servername = "localhost";
-$username = "localhost";
+$username = "root";
 $password ="";
 $dbname="test";
 // Create connection

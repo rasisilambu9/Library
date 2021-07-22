@@ -49,7 +49,7 @@ border-radius:10px;}
    
    padding:8px;
   margin-top: 8px;
-  margin-left:800px;
+  margin-left:980px;
   border: none;
 }
  
@@ -88,7 +88,7 @@ $ac=$_POST["year"];
  
    
 $servername = "localhost";
-$username = "localhost";
+$username = "root";
 $password ="";
 $dbname="test";
 $conn = new mysqli($servername, $username, $password ,$dbname);

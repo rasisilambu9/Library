@@ -56,7 +56,7 @@ margin-left:300px;}
 body{
 background-image:url("home-imgs.jpeg");
 background-repeat:no-repeat;
-background-size:1500px 800px;
+background-size:1800px 800px;
 } 
  
  </style>
@@ -74,7 +74,7 @@ background-size:1500px 800px;
 <?php
 $search=$_POST["bookid"];
 $servername = "localhost";
-$username = "localhost";
+$username = "root";
 $password ="";
 $dbname="test";
 $query1= "SELECT * from `test`.`book_sts` where`Book_id`='".$search."'";

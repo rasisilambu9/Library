@@ -26,7 +26,7 @@ button {
 body{
 background-image:url("bg_done.jpg");
 background-repeat:no-repeat;
-background-size:1500px 800px;
+background-size:1800px 800px;
 } 
 .img1 img {
    width: 180px;
@@ -78,7 +78,7 @@ background-size:1500px 800px;
    
    padding:6px;
   margin-top: -30px;
-  margin-left:1075px;
+  margin-left:1250px;
   border: none;
   border-radius:10px;
 }
@@ -180,7 +180,7 @@ padding:8px 0px;
  
 
 $servername = "localhost";
-$username = "localhost";
+$username = "root";
 $password ="";
 $dbname="test";
 $query1= "SELECT Date,Book_id,RollNo,Book from `test`.`lend_det`";

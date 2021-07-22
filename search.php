@@ -68,7 +68,7 @@ margin-left:300px;}
 <?php
 $search=$_POST["key"];
 $servername = "localhost";
-$username = "localhost";
+$username = "root";
 $password ="";
 $dbname="test";
 $query1= "SELECT * from `test`.`Book_det` where`Name` like  '%$search%'";

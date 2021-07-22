@@ -4,7 +4,7 @@
 body{
 background-image:url("stud_ back.jpg");
 background-repeat:no-repeat;
-background-size:1500px 800px;
+background-size:1800px 800px;
 } 
 .pan{
 	background-color:#f2a104;
@@ -41,14 +41,14 @@ Student Details</TITLE>
   
 
  
-<div class=blink>
-<font color=red><b>Note:If the screen is Blank, Student not found</b></font></div>
+
+
 
 <?php
 $stu_id=$_POST["name"];
 $passworda=$_POST["password"];
 $servername = "localhost";
-$username = "localhost";
+$username = "root";
 $password ="";
 $dbname="test";
 // Create connection
@@ -69,33 +69,34 @@ $query1= "Select * from `test`.`stud_det` where `RollNo`='".$stu_id."'";
 $result=mysqli_query($conn,$query1);
 while($row=mysqli_fetch_array($result)){
 	 
- echo"<div class='w3-panel'>";	
- echo"<img src=img_avatar.png width=100px></img>"; echo"<br>";
+ 
+ 
+  echo"<center>";
  
 if( $passworda==($row['dob']))
 {	
 $result=mysqli_query($conn,$query1);
 while($row=mysqli_fetch_array($result)){
 echo"<b><font color=orange>ROLLNO:</font>".$row["RollNo"]."	</b>";
-echo "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp"; 
-echo"<b><font color=orange>NO OF BOOK AVAILABLE:</font>".$row["No_of_book_avl"]."</td>";echo"</br>";echo"</br>";
-echo"</br>";echo"<b><font color=orange>DOB:</font>".$row["dob"]."</td>";
-echo "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp"; 
+echo"<br>";echo"<br>";
+echo"<b><font color=orange>NO OF BOOK AVAILABLE:</font>".$row["No_of_book_avl"]."</td>";echo"</br>";
+echo"</br>";echo"<b><font color=orange>DOB:</font>".$row["dob"]."</td>";echo"<br>";echo"<br>";
 echo"<b><font color=orange>NAME:</font>".$row["Name"]."</b>";echo"<br>";echo"<br>";echo"<b><font color=orange>Mail ID:</font>".$row["mail"]."</td>";echo"</br>";echo"</br>";
-echo"<br>";echo"</br>";
+
 echo"<b><font color=orange>YEAR:</font>".$row["Year_sem"]."</b>";
-
-
-echo "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp"; 
-
+echo"<br>";echo"<br>";
 echo"<b><font color=orange>Phone NO:</font>".$row["phno"]."</td>";
 
 echo"</br>";echo"</br>";
 echo"<br>";echo"</br>";
 echo"<br>";
 echo"</div>";
+echo"</center>";
+echo"</table>";
 echo"<center>";
 echo"<font color=red><b>Transaction History</font>";
+echo"<br>";
+echo"<br>";
 $query1="SELECT * FROM lend_det WHERE RollNo='$stu_id'";
 $result1=mysqli_query($conn,$query1);
 $count1=mysqli_num_rows($result1);
@@ -110,6 +111,7 @@ echo"<table border=1px align=center>
      <th>Return Date</th>
       
      </tr>";
+     echo"<br>";
 while($row1=mysqli_fetch_assoc($result1)){
     echo"<tr>";
      
@@ -134,7 +136,7 @@ echo"<b><a href=stud.php>click here</a> to student login</b>";}
 
 	
 }
-
+echo"</center>";
  ?> 
  <br>
  <br>

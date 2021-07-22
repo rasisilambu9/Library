@@ -3,7 +3,7 @@
 body{
 background-image:url("home-imgs.jpeg");
 background-repeat:no-repeat;
-background-size:1500px 800px;}
+background-size:1800px 800px;}
 /* Add a black background color to the top navigation */
 .topnav {
   background-color: #333;
@@ -47,7 +47,7 @@ background-size:1500px 800px;}
    
    padding:8px;
   margin-top: 8px;
-  margin-left:800px;
+  margin-left:980px;
   border: none;
 }
  
@@ -99,17 +99,20 @@ width:200px;}</style></head>
 <form method=POST action=stud_delt.php class="form1">
 <font color=black><b>Select Academic Year to Delete</b></font><br><br>
 <select name="year">
+
   <?php
+  
  
  echo"<option value=0>Select Academic Year</option>";
  for($start=2000;$start<=2050;$start+=1){
 	 $starts=$start+4;
-	 $a=start;
-	 $a.=starts;
+	 $a=$start;
+	 $a.=$starts;
  echo"<option value=$start-$starts >$start - $starts	</option>";}
- echo"</select>";
+ 
  
  ?>
+</select>
  <br>
 <Button type=submit>Delete</button>
 </body>

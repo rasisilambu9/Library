@@ -4,7 +4,7 @@
  body{
 background-image:url("home-imgs.jpeg");
 background-repeat:no-repeat;
-background-size:1500px 800px;
+background-size:1800px 800px;
 } 
  
 .almnt{
@@ -53,7 +53,7 @@ border-radius:10px;}
    
    padding:8px;
   margin-top: 8px;
-  margin-left:800px;
+  margin-left:980px;
   border: none;
 }
  
@@ -83,7 +83,7 @@ button {
 <div class="almnt"> 
 <?php
  
-$sno=$_POST["sno"];
+
 $Book_id=$_POST["Book_id"];
 $bookname=$_POST["name"];
 $author=$_POST["author"];
@@ -104,10 +104,10 @@ $author=$_POST["author"];
  
 $i=1;    
 $servername = "localhost";
-$username = "localhost";
+$username = "root";
 $password ="";
 $dbname="test";
-$query1= "INSERT INTO `test`.`book_det` ( `Book_id`, `Name`, `Author`,) VALUES ('$Book_id'  ,'$bookname','$author')";
+$query1= "INSERT INTO `test`.`book_det` (`S.No`, `Book_id`, `Name`, `Author`,) VALUES (1000,'$Book_id'  ,'$bookname','$author')";
  
 // Create connection
 $conn = new mysqli($servername, $username, $password ,$dbname);

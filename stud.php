@@ -5,7 +5,7 @@
 body{
 background-image:url("home-imgs.jpeg");
 background-repeat:no-repeat;
-background-size:1500px 800px;
+background-size:1800px 800px;
 } 
 
 /* Add a black background color to the top navigation */
@@ -56,9 +56,9 @@ background-size:1500px 800px;
 }
 .topnav input[type=text]{
    
-   padding:6px;
+   padding:8px;
   margin-top: 8px;
-  margin-left:790px;
+  margin-left:960px;
   border: none;
   border-radius:10px;
 }

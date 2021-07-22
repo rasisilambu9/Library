@@ -9,7 +9,7 @@
 <center>
 <?php
 $servername = "localhost";
-$username = "localhost";
+$username = "root";
 $password ="";
 $dbname="test";
 
