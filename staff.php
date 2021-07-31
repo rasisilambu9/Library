@@ -1,7 +1,7 @@
  <HTML>
 <HEAD>
 <TITLE>IT DEPT LIBRARY</TITLE>
- <style>
+<style>
 body{
 background-image:url("home-imgs.jpeg");
 background-repeat:no-repeat;
